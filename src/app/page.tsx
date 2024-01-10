@@ -1,5 +1,6 @@
+import BarChart from "@/components/BarChart";
 import PageTitle from "@/components/PageTitle";
-import Card, { CardProps } from "@/components/card";
+import Card, { CardContent, CardProps } from "@/components/card";
 import { Activity, CreditCard, DollarSign, Users } from "lucide-react";
 
 const cardData: CardProps[] = [
@@ -44,6 +45,13 @@ export default function Home() {
             label={data.label}
           />
         ))}
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 transition-all lg:grid-cols-2">
+        <CardContent>
+          <p className="p-4 font-semibold">Overview</p>
+          <BarChart/>
+        </CardContent>
       </section>
     </div>
   )
