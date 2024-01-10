@@ -1,3 +1,5 @@
+![image](https://github.com/sachidumaleesha/shadcn-dashboard/assets/45502921/e14d0957-4216-4754-961c-c9ab1e0b0cbd)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
