@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import Link from "next/link";
@@ -8,7 +10,7 @@ import { buttonVariants } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
+  TooltipTrigger
 } from "@/components/ui/tooltip";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import { usePathname } from "next/navigation";
@@ -20,12 +22,12 @@ interface NavProps {
     label?: string;
     icon: LucideIcon;
     variant: "default" | "ghost";
-    href: String;
+    href: string;
   }[];
 }
 
 export function Nav({ links, isCollapsed }: NavProps) {
-  const pathname = usePathname();
+  const pathName = usePathname();
   return (
     <TooltipProvider>
       <div
@@ -41,8 +43,8 @@ export function Nav({ links, isCollapsed }: NavProps) {
                     href={link.href}
                     className={cn(
                       buttonVariants({
-                        variant: link.href === pathname ? "default" : "ghost",
-                        size: "icon",
+                        variant: link.href === pathName ? "default" : "ghost",
+                        size: "icon"
                       }),
                       "h-9 w-9",
                       link.variant === "default" &&
@@ -71,8 +73,8 @@ export function Nav({ links, isCollapsed }: NavProps) {
                 href={link.href}
                 className={cn(
                   buttonVariants({
-                    variant: link.href === pathname ? "default" : "ghost",
-                    size: "sm",
+                    variant: link.href === pathName ? "default" : "ghost",
+                    size: "sm"
                   }),
                   link.variant === "default" &&
                     "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
