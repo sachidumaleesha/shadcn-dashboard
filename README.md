@@ -41,8 +41,7 @@ If you're searching for a **shadcn/ui dashboard example**, a **Next.js admin tem
 
 | Dashboard |
 |---|
-| ![Shadcn Dashboard preview — Next.js admin dashboard built with shadcn/ui and Tailwind CSS](<img width="1920" height="943" alt="image" src="https://github.com/user-attachments/assets/6c8a5064-f0ee-4b8a-9c6c-7da2fbbd5b3e" />
-) |
+|<img width="1920" height="943" alt="image" src="https://github.com/user-attachments/assets/6c8a5064-f0ee-4b8a-9c6c-7da2fbbd5b3e" />|
 
 ## 🛠️ Tech Stack
 
